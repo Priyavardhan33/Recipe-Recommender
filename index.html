@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recipe Recommender</h1>
+        
+        <div class="search-section">
+            <div class="search-container">
+                <input type="text" placeholder="Search for recipes...">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+        </div>
+
+        <!-- Remove unused diet select element -->
+        <div class="filters">
+            <select id="cuisineSelect">
+                <option value="">All Cuisines</option>
+                <option value="Indian">Indian</option>
+                <option value="Mexican">Mexican</option>
+                <option value="Chinese">Chinese</option>
+            </select>
+            <select id="timeSelect">
+                <option value="">Any Time</option>
+                <option value="15">15 minutes or less</option>
+                <option value="30">30 minutes or less</option>
+                <option value="45">45 minutes or less</option>
+                <option value="60">1 hour or less</option>
+                <option value="more">More than 1 hour</option>
+            </select>
+        </div>
+
+        <div class="recipe-grid"></div>
+    </div>
+    <button id="backToTop" title="Back to Top">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>
